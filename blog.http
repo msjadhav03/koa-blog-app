@@ -1,0 +1,21 @@
+POST http://localhost:3000/create
+content-type: application/json
+
+{
+    "title": "test Blog",
+    "body":"Let's do some test development",
+    "username":"rick"
+}
+
+GET http://localhost:3000/findAll
+
+GET http://localhost:3000/findOne/650ee5478198cc4c14a3eb96
+
+DELETE http://localhost:3000/deleteOne/650ee5478198cc4c14a3eb96
+
+PATCH http://localhost:3000/updateOne/650ee5478198cc4c14a3eb96
+content-type : application/json
+
+{
+    "username":"david"
+}
